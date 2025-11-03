@@ -20,7 +20,7 @@ function Navbar() {
 
   return (
     <>
-        <header className='px-12 md:px-12 lg:px-32 absolute w-full z-50'>
+        <header className='px-9 md:px-12 lg:px-32 absolute w-full z-50'>
         <nav className='w-full bg-transparent flex justify-between p-7 px-0 items-center border-b-[1px] border-solid border-[#ffffff4d]'>
        
        <div className="lg:hidden"  onClick={toggleMenu}>
