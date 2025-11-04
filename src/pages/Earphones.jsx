@@ -17,7 +17,7 @@ function Earphones() {
     <>
       <main className=' w-full'>
       <section className='bg-[#000000] pt-48 lg:pt-48 lg:px-32 p-16 md:p-16 flex items-center justify-center'>
-            <h2 className='text-[40px] font-bold text-white tracking-[1.43px] mb-5'>EARPHONES</h2>
+            <h2 className='text-[28px] lg:text-[40px] font-bold text-white tracking-[1.43px] mb-5'>EARPHONES</h2>
             
       </section>
 
@@ -69,17 +69,17 @@ function Earphones() {
       </section>
 
         
-        <section className='p-12 py-32 md:py-32 lg:p-32 grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20'>
-            <div className='lg:pt-20 order-2 lg:order-1'>
-                <h3 className='text-[36px] font-bold leading-12 '>BRINGING YOU THE <br /> <span className='text-[#D87D4A]'>BEST</span> AUDIO GEAR</h3>
-                <p className='text-[15px] text-[#7D7D7D] mt-5 leading-7'>Located at the heart of New York City, Audiophile is the premier store for high end headphones, earphones, speakers, and audio accessories. We have a large showroom and luxury demonstration rooms available for you to browse and experience a wide range of our products. Stop by our store to meet some of the fantastic people who make Audiophile the best place to buy your portable audio equipment.</p>
-            </div>
-
-            <div className='rounded-[8px] relative overflow-hidden lg:h-[500px] md:h-[300px] h-[300px] order-1 lg:order-2'>
-                <img src={headphoneuser} className=' h-[700px] w-full object-cover md:object-top-left lg:object-center '  alt="" />
-            </div>
-
-        </section>
+        <section className='p-9 py-12 md:py-32 lg:p-32 grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20'>
+                    <div className='lg:pt-20 order-2 lg:order-1'>
+                        <h3 className='text-[28px] md:text-[36px] font-bold leading-9 '>BRINGING YOU THE <br className='lg:block md:block hidden' /> <span className='text-[#D87D4A]'>BEST</span> AUDIO GEAR</h3>
+                        <p className='text-[15px] text-[#7D7D7D] mt-5 leading-7'>Located at the heart of New York City, Audiophile is the premier store for high end headphones, earphones, speakers, and audio accessories. We have a large showroom and luxury demonstration rooms available for you to browse and experience a wide range of our products. Stop by our store to meet some of the fantastic people who make Audiophile the best place to buy your portable audio equipment.</p>
+                    </div>
+        
+                    <div className='rounded-[8px] relative overflow-hidden lg:h-[500px] md:h-[300px] h-[300px] order-1 lg:order-2'>
+                        <img src={headphoneuser} className=' h-[700px] w-full object-cover md:object-top-left lg:object-center '  alt="" />
+                    </div>
+        
+                </section>
       </main>
     </>
   )

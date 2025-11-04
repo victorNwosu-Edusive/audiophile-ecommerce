@@ -75,26 +75,26 @@ function Navbar() {
           isOpen ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-4 pointer-events-none"
         } md:hidden absolute duration-300 ease-out w-full z-40 p-5 pt-48 bg-white rounded-[8px] transition-all`}>
             <div className='*:bg-[#F1F1F1] *:p-5 *:rounded-[8px] gap-20 md:gap-5 lg:gap-7 grid-cols-1 md:grid-cols-3   grid lg:grid-cols-3 '>
-            <div className='relative flex flex-col items-center'>
+            <NavLink to="/headphones" onClick={closeMenu} className='cursor-pointer relative flex flex-col items-center'>
             <img className=' h-[146px] z-30 w-auto -m-20' src={headphone} alt="" />
             <span className='h-4 w-28 bg-neutral-500 rounded-full blur-md mt-[77px] mb-5'></span>
              <h1 className='font-bold text-[18px] tracking-[1.29px] mb-3'>HEADPHONES</h1>
             <a href='/headphones' className='cursor-pointer hover:text-[#D87D4A] hover:gap-2 duration-200 text-[13px] font-[700] tracking-[1px] text-neutral-500 flex items-center gap-1'>SHOP <ChevronRight size={15} className='text-[#D87D4A]' /> </a>
-            </div>
+            </NavLink>
 
-             <div className='relative flex flex-col items-center'>
+             <NavLink to="/speakers" onClick={closeMenu} className='cursor-pointer relative flex flex-col items-center'>
             <img className=' h-[146px] z-30 w-auto -m-20' src={speaker} alt="" />
             <span className='h-4 w-28 bg-neutral-500 rounded-full blur-md mt-[77px] mb-5'></span>
              <h1 className='font-bold text-[18px] tracking-[1.29px] mb-3'>SPEAKERS</h1>
             <a href='/speakers' className='cursor-pointer hover:text-[#D87D4A] hover:gap-2 duration-200 text-[13px] font-[700] tracking-[1px] text-neutral-500 flex items-center gap-1'>SHOP <ChevronRight size={15} className='text-[#D87D4A]' /> </a>
-            </div>
+            </NavLink>
 
-            <div className='relative flex flex-col items-center'>
+            <NavLink to="/earphones" onClick={closeMenu} className='cursor-pointer relative flex flex-col items-center'>
             <img className=' h-[146px] z-30 w-auto -m-20' src={earphone} alt="" />
             <span className='h-4 w-28 bg-neutral-500 rounded-full blur-md mt-[77px] mb-5'></span>
              <h1 className='font-bold text-[18px] tracking-[1.29px] mb-3'>EARPHONES</h1>
             <a href='/earphones' className='cursor-pointer hover:text-[#D87D4A] hover:gap-2 duration-200 text-[13px] font-[700] tracking-[1px] text-neutral-500 flex items-center gap-1'>SHOP <ChevronRight size={15} className='text-[#D87D4A]' /> </a>
-            </div>
+            </NavLink>
 
         </div>
         </div>
