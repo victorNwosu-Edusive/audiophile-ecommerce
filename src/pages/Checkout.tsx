@@ -9,6 +9,7 @@ import { useMutation } from 'convex/react';
 import { api } from '../../convex/_generated/api';
 import emailjs from '@emailjs/browser';
 import ScrollToTop from '../components/scrolltotop';
+import shape from '../assets/images/Shape.svg' 
 
 const schema = yup.object({
   name: yup.string().required('Name is required'),
@@ -155,7 +156,7 @@ function Checkout() {
 
       <form onSubmit={handleSubmit(onSubmit)} className="grid grid-cols-1 lg:grid-cols-3 gap-10">
         {/* LEFT SIDE */}
-        <div className="bg-white rounded-[8px] col-span-2 p-8">
+        <div className="bg-white rounded-[8px] lg:col-span-2 p-8">
           <h1 className="text-[24px] font-bold mb-5">Checkout</h1>
 
           {/* Billing Details */}
@@ -252,14 +253,17 @@ function Checkout() {
           <h2 className="text-[18px] font-bold mb-5 text-[#D87D4A]">PAYMENT DETAILS</h2>
           <div className="mb-4">
             <label className="block text-[12px] font-bold mb-2">Payment Method</label>
-            <div className="flex gap-4">
-              <label className="flex items-center">
+            <div className="grid md:grid-cols-2 gap-4">
+              <div> </div>
+              <div className="flex flex-col gap-4">
+              <label className="flex items-center p-3 rounded-[8px] border-gray-300 border cursor-pointer hover:border-[#D87D4A] focus:border-[#D87D4A]">
                 <input type="radio" value="e-money" {...register('paymentMethod')} className="mr-2" /> e-Money
               </label>
-              <label className="flex items-center">
+              <label className="flex items-center p-3 rounded-[8px] border-gray-300 border cursor-pointer hover:border-[#D87D4A] focus:border-[#D87D4A]">
                 <input type="radio" value="cash" {...register('paymentMethod')} className="mr-2" /> Cash on
                 Delivery
               </label>
+              </div>
             </div>
           </div>
 
@@ -293,10 +297,16 @@ function Checkout() {
               </div>
             </div>
           )}
+          {paymentMethod === 'cash' && (
+            <div className="flex gap-4">
+              <img src={shape} className='col-span-1' alt="" />
+              <p className='text-[#666666] text-[13px] col-span-4'>The ‘Cash on Delivery’ option enables you to pay in cash when our delivery courier arrives at your residence. Just make sure your address is correct so that your order will not be cancelled.</p>
+            </div>
+          )}
         </div>
 
         {/* RIGHT SIDE SUMMARY */}
-        <div className="bg-white rounded-[8px] p-5 h-fit">
+        <div className="bg-white rounded-[8px] w-full p-5 h-fit">
           <h2 className="text-[18px] font-bold mb-5">SUMMARY</h2>
           <div className="p-5 rounded">
             {cart.map((item) => (
