@@ -60,7 +60,6 @@ ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <ConvexProvider client={convex}>
       <CartProvider>
-        <ScrollToTop />
         <RouterProvider router={router} />
       </CartProvider>
     </ConvexProvider>
