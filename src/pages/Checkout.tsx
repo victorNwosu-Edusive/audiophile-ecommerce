@@ -145,7 +145,7 @@ function Checkout() {
 
 <>
 <ScrollToTop />
-    <main className="w-full p-12 md:p-32 bg-[#F1F1F1]">
+    <main className="w-full p-9 pt-32 md:p-32 bg-[#F1F1F1]">
       <button
         onClick={() => navigate(-1)}
         className="flex items-center gap-2 mb-5 text-[#666666] hover:text-[#D87D4A]"
