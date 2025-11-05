@@ -3,22 +3,23 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import '../App.css'
 import { faFacebookSquare } from '@fortawesome/free-brands-svg-icons/faFacebookSquare'
 import { faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons'
+import { NavLink } from 'react-router-dom'
 
 function Footer() {
 
   return (
     <>
-        <footer className='bg-[#101010] p-12 lg:px-32 absolute w-full z-50'>
+        <footer className='bg-[#101010] p-12 lg:px-32 absolute w-full z-20'>
         <div className='w-full bg-transparent flex flex-col md:flex-col lg:flex-row justify-between p-10 px-0 lg:items-center md:items-start items-center md:gap-5 lg:gap-0 gap-5 ]'>
         <div>
-        <a href=""><img src={logo} alt="" /></a>
+        <NavLink to="/"><img src={logo} alt="" /></NavLink>
         </div>
         <div>
           <ul className="flex flex-col md:flex-row lg:flex-row items-center gap-x-8 gap-y-4 decoration-none text-white">
-            <li><a href='/' className='font-bold text-[13px] tracking-widest hover:text-[#d87d4a] duration-200'>HOME</a></li>
-            <li><a href="/headphones" className='font-bold text-[13px] tracking-widest hover:text-[#d87d4a] duration-200'>HEADPHONES</a></li>
-            <li><a href="/speakers" className='font-bold text-[13px] tracking-widest hover:text-[#d87d4a] duration-200'>SPEAKERS</a></li>
-            <li><a href="/earphones" className='font-bold text-[13px] tracking-widest hover:text-[#d87d4a] duration-200'>EARPHONES</a></li>
+            <li><NavLink to='/' className='font-bold text-[13px] tracking-widest hover:text-[#d87d4a] duration-200'>HOME</NavLink></li>
+            <li><NavLink to="/headphones" className='font-bold text-[13px] tracking-widest hover:text-[#d87d4a] duration-200'>HEADPHONES</NavLink></li>
+            <li><NavLink to="/speakers" className='font-bold text-[13px] tracking-widest hover:text-[#d87d4a] duration-200'>SPEAKERS</NavLink></li>
+            <li><NavLink to="/earphones" className='font-bold text-[13px] tracking-widest hover:text-[#d87d4a] duration-200'>EARPHONES</NavLink></li>
           </ul>
         </div>
         </div>

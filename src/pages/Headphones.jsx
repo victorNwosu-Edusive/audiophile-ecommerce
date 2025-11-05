@@ -1,4 +1,6 @@
 import { ChevronRight } from 'lucide-react'
+import { Link } from 'react-router-dom'
+
 import '../App.css'
 import hero from '../assets/images/Bitmap.png'
 import headphone from '../assets/images/image-removebg-preview(41)(1).png'
@@ -31,7 +33,7 @@ function Headphones() {
             <h1 className='text-[36px] md:text-[50px] lg:text-[50px] font-bold text-black text-center md:text-left lg:text-left leading-10  lg:leading-14 mb-5'>XX99 MARK II <br /> HEADPHONES</h1>
             <p className='text-[15px] text-[#666666] text-center md:text-left lg:text-left mb-10 font-[500]'>The new XX99 Mark II headphones is the pinnacle of pristine audio. It redefines your premium 
                 headphone experience by reproducing the balanced depth and precision of studio-quality sound.<br className='md:block lg:hidden' /> build quality made for the passionate music <br className='md:block lg:hidden' /> enthusiast.</p>
-            <button className='bg-[#D87D4A] px-7 py-3 text-white text-[13px] font-bold hover:bg-[#FBAF85] duration-200 tracking-[1px] cursor-pointer'>SEE PRODUCT</button>
+            <Link to="/product/2" className='bg-[#D87D4A] px-7 py-3 text-white text-[13px] font-bold hover:bg-[#FBAF85] duration-200 tracking-[1px] inline-block'>SEE PRODUCT</Link>
             </div>
 
         </div>
@@ -42,7 +44,7 @@ function Headphones() {
             <h1 className='text-[36px] md:text-[50px] lg:text-[50px] font-bold text-black text-center md:text-left lg:text-left leading-10  lg:leading-14 mb-5'>XX99 MARK I <br /> HEADPHONES</h1>
             <p className='text-[15px] text-[#666666] text-center md:text-left lg:text-left mb-10 font-[500]'>As the gold standard for headphones, the classic XX99 Mark I offers detailed and accurate 
                 audio reproduction for audiophiles, mixing engineers, and music aficionados alike in studios and on the go.</p>
-            <button className='bg-[#D87D4A] px-7 py-3 text-white text-[13px] font-bold hover:bg-[#FBAF85] duration-200 tracking-[1px] cursor-pointer'>SEE PRODUCT</button>
+            <Link to="/product/5" className='bg-[#D87D4A] px-7 py-3 text-white text-[13px] font-bold hover:bg-[#FBAF85] duration-200 tracking-[1px] inline-block'>SEE PRODUCT</Link>
             </div>
 
              <div className='p-20 bg-[#F1F1F1] rounded-[8px] order-1 lg:order-2' >
@@ -63,7 +65,7 @@ function Headphones() {
             <h1 className='text-[36px] md:text-[50px] lg:text-[50px] font-bold text-black text-center md:text-left lg:text-left leading-10  lg:leading-14 mb-5'>XX59<br /> HEADPHONES</h1>
             <p className='text-[15px] text-[#666666] text-center md:text-left lg:text-left mb-10 font-[500]'>Enjoy your audio almost anywhere and customize it to your specific tastes with the XX59 headphones. 
                 The stylish yet durable versatile wireless headset is a brilliant companion at home or on the move.</p>
-            <button className='bg-[#D87D4A] px-7 py-3 text-white text-[13px] font-bold hover:bg-[#FBAF85] duration-200 tracking-[1px] cursor-pointer'>SEE PRODUCT</button>
+            <Link to="/product/6" className='bg-[#D87D4A] px-7 py-3 text-white text-[13px] font-bold hover:bg-[#FBAF85] duration-200 tracking-[1px] inline-block'>SEE PRODUCT</Link>
             </div>
 
         </div>

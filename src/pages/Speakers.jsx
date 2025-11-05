@@ -1,4 +1,5 @@
 import { ChevronRight } from 'lucide-react'
+import { Link } from 'react-router-dom'
 import '../App.css'
 import hero from '../assets/images/Bitmap.png'
 import headphone from '../assets/images/image-removebg-preview(41)(1).png'
@@ -32,7 +33,7 @@ function Speakers() {
             <h1 className='text-[36px] md:text-[50px] lg:text-[50px] font-bold text-black text-center md:text-left lg:text-left leading-10  lg:leading-14 mb-5'>ZX9 <br /> SPEAKER</h1>
             <p className='text-[15px] text-[#666666] text-center md:text-left lg:text-left mb-10 font-[500]'>Upgrade your sound system with the all new ZX9 active speaker. 
                 It’s a bookshelf speaker system that offers truly wireless connectivity -- creating new possibilities for more pleasing and practical audio setups.</p>
-            <button className='bg-[#D87D4A] px-7 py-3 text-white text-[13px] font-bold hover:bg-[#FBAF85] duration-200 tracking-[1px] cursor-pointer'>SEE PRODUCT</button>
+            <Link to="/product/3" className='bg-[#D87D4A] px-7 py-3 text-white text-[13px] font-bold hover:bg-[#FBAF85] duration-200 tracking-[1px] inline-block'>SEE PRODUCT</Link>
             </div>
 
         </div>
@@ -43,7 +44,7 @@ function Speakers() {
             <h1 className='text-[36px] md:text-[50px] lg:text-[50px] font-bold text-black text-center md:text-left lg:text-left leading-10  lg:leading-14 mb-5'>ZX7 <br /> SPEAKERS</h1>
             <p className='text-[15px] text-[#666666] text-center md:text-left lg:text-left mb-10 font-[500]'>Stream high quality sound wirelessly with minimal loss. The ZX7 bookshelf speaker uses high-end audiophile 
                 components that represents the top of the line powered speakers for home or studio use.</p>
-            <button className='bg-[#D87D4A] px-7 py-3 text-white text-[13px] font-bold hover:bg-[#FBAF85] duration-200 tracking-[1px] cursor-pointer'>SEE PRODUCT</button>
+            <Link to="/product/7" className='bg-[#D87D4A] px-7 py-3 text-white text-[13px] font-bold hover:bg-[#FBAF85] duration-200 tracking-[1px] inline-block'>SEE PRODUCT</Link>
             </div>
 
              <div className='p-20 bg-[#F1F1F1] rounded-[8px] order-1 lg:order-2' >

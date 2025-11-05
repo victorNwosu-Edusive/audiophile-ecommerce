@@ -4,12 +4,19 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+import { ConvexProvider, ConvexReactClient } from "convex/react";
 import "./index.css";
 import Home from "./pages/Home";
 import Headphones from "./pages/Headphones";
 import Navbar from "./components/Navbar";
 import Speakers from "./pages/Speakers";
 import Earphones from "./pages/Earphones";
+import ProductDetails from "./pages/ProductDetails";
+import Checkout from "./pages/Checkout";
+import OrderConfirmation from "./pages/OrderConfirmation";
+import { CartProvider } from "./context/CartContext";
+
+const convex = new ConvexReactClient(import.meta.env.VITE_CONVEX_URL);
 
 const router = createBrowserRouter([
   {
@@ -32,12 +39,28 @@ const router = createBrowserRouter([
         path: "earphones",
         element: <Earphones /> ,
       },
+      {
+        path: "product/:id",
+        element: <ProductDetails /> ,
+      },
+      {
+        path: "checkout",
+        element: <Checkout /> ,
+      },
+      {
+        path: "order-confirmation",
+        element: <OrderConfirmation /> ,
+      },
     ],
   },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <ConvexProvider client={convex}>
+      <CartProvider>
+        <RouterProvider router={router} />
+      </CartProvider>
+    </ConvexProvider>
   </React.StrictMode>
 );

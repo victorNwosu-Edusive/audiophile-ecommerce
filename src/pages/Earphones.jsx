@@ -1,14 +1,15 @@
 import { ChevronRight } from 'lucide-react'
+import { Link } from 'react-router-dom'
 import '../App.css'
 import hero from '../assets/images/Bitmap.png'
 import headphone from '../assets/images/image-removebg-preview(41)(1).png'
 import speaker from '../assets/images/image-removebg-preview(38)(1).png'
 import bigspeaker from '../assets/images/image-removebg-preview(38)(2).png'
-import earphone from '../assets/images/image-removebg-preview(42).png' 
+import earphone from '../assets/images/image-removebg-preview(42).png'
 import earphoner from '../assets/images/Bitmap(3).png'
-import headphoneone from '../assets/images/image-removebg-preview(47)(1).png'  
-import headphonewhite from '../assets/images/image-removebg-preview(48)(1).png'  
-import speakerblack from '../assets/images/image-removebg-preview(49)(1).png'  
+import headphoneone from '../assets/images/image-removebg-preview(47)(1).png'
+import headphonewhite from '../assets/images/image-removebg-preview(48)(1).png'
+import speakerblack from '../assets/images/image-removebg-preview(49)(1).png'
 import headphoneuser from '../assets/images/Bitmap(4).png' 
 
 function Earphones() {
@@ -32,7 +33,7 @@ function Earphones() {
             <h1 className='text-[36px] md:text-[50px] lg:text-[50px] font-bold text-black text-center md:text-left lg:text-left leading-10  lg:leading-14 mb-5'>YX1 WIRELESS <br /> EARPHONES</h1>
             <p className='text-[15px] text-[#666666] text-center md:text-left lg:text-left mb-10 font-[500]'>Tailor your listening experience with bespoke dynamic 
                 drivers from the new YX1 Wireless Earphones. Enjoy incredible high-fidelity sound even in noisy environments with its active noise cancellation feature.</p>
-            <button className='bg-[#D87D4A] px-7 py-3 text-white text-[13px] font-bold hover:bg-[#FBAF85] duration-200 tracking-[1px] cursor-pointer'>SEE PRODUCT</button>
+            <Link to="/product/1" className='bg-[#D87D4A] px-7 py-3 text-white text-[13px] font-bold hover:bg-[#FBAF85] duration-200 tracking-[1px] inline-block'>SEE PRODUCT</Link>
             </div>
 
         </div>
