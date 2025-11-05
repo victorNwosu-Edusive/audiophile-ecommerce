@@ -15,7 +15,6 @@ import ProductDetails from "./pages/ProductDetails";
 import Checkout from "./pages/Checkout";
 import OrderConfirmation from "./pages/OrderConfirmation";
 import { CartProvider } from "./context/CartContext";
-import ScrollToTop from "./components/scrolltotop";
 
 const convex = new ConvexReactClient(import.meta.env.VITE_CONVEX_URL);
 

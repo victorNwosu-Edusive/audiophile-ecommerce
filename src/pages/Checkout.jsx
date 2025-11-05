@@ -113,11 +113,15 @@ function Checkout() {
         {
           to_email: data.email,
           customer_name: data.name,
+          phone: data.phone,
           order_id: orderId,
           order_items: cart
             .map((item) => `${item.name} (x${item.quantity}) - $${item.price}`)
             .join('\n'),
           shipping_address: `${data.address}, ${data.city}, ${data.country}`,
+          subtotal: `$${subtotal.toLocaleString()}`,
+          shipping: `$${shipping.toLocaleString()}`,
+          vat: `$${vat.toLocaleString()}`,
           total: `$${grandTotal.toLocaleString()}`,
           support_email: 'support@yourecommercesite.com',
           view_order_link: `https://yourwebsite.com/orders/${orderId}`,
@@ -155,7 +159,7 @@ function Checkout() {
           <h1 className="text-[24px] font-bold mb-5">Checkout</h1>
 
           {/* Billing Details */}
-          <h2 className="text-[18px] font-bold mb-5">BILLING DETAILS</h2>
+          <h2 className="text-[18px] font-bold mb-5 text-[#D87D4A]">BILLING DETAILS</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
             <div>
               <label className="block text-[12px] font-bold mb-2">Name</label>
@@ -193,7 +197,7 @@ function Checkout() {
           </div>
 
           {/* Shipping Info */}
-          <h2 className="text-[18px] font-bold mb-5">SHIPPING INFO</h2>
+          <h2 className="text-[18px] font-bold mb-5 text-[#D87D4A]">SHIPPING INFO</h2>
           <div className="grid grid-cols-1 gap-4 mb-8">
             <div>
               <label className="block text-[12px] font-bold mb-2">Address</label>
@@ -245,7 +249,7 @@ function Checkout() {
           </div>
 
           {/* Payment Method */}
-          <h2 className="text-[18px] font-bold mb-5">PAYMENT DETAILS</h2>
+          <h2 className="text-[18px] font-bold mb-5 text-[#D87D4A]">PAYMENT DETAILS</h2>
           <div className="mb-4">
             <label className="block text-[12px] font-bold mb-2">Payment Method</label>
             <div className="flex gap-4">
