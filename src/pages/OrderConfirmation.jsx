@@ -1,5 +1,6 @@
 import { useLocation, Link } from 'react-router-dom';
 import { products } from '../data/products';
+import ScrollToTop from '../components/scrolltotop';
 
 function OrderConfirmation() {
   const location = useLocation();
@@ -23,6 +24,8 @@ function OrderConfirmation() {
   }
 
   return (
+    <>
+    <ScrollToTop />
     <main className="w-full p-12 md:p-32">
       <div className="text-center mb-10">
         <div className="text-green-500 text-6xl mb-4">✓</div>
@@ -91,6 +94,7 @@ function OrderConfirmation() {
         </div>
       </section>
     </main>
+    </>
   );
 }
 

@@ -8,6 +8,7 @@ import earphone from '../assets/images/image-removebg-preview(42).png'
 import earphoner from '../assets/images/Bitmap(3).png' 
 import headphoneuser from '../assets/images/Bitmap(4).png' 
 import { NavLink } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 function Home() {
 
@@ -77,14 +78,14 @@ function Home() {
                 <div className='col-span-2 lg:m-auto lg:px-28 md:flex md:flex-col lg:block flex flex-col items-center justify-center   '>
                     <h3 className='text-[36px] font-bold text-white leading-10 lg:leading-14 text-center lg:text-left mb-5'>ZX9 <br /> SPEAKER</h3>
                     <p className='text-[15px] text-[#F1F1F1] text-center lg:text-left mb-10 font-[500]'>Upgrade to premium speakers that are <br className='hidden md:block lg:hidden' />phenomenally built to deliver truly remarkable <br className='md:block lg:hidden' /> sound.</p>
-                    <button className='bg-black px-7 relative py-3 z-30 text-white text-[13px] font-bold hover:bg-[#4C4C4C] duration-200 tracking-[1px] cursor-pointer'>SEE PRODUCT</button>
+                    <Link to="/product/3" className='bg-black px-7 relative py-3 z-30 text-white text-[13px] font-bold hover:bg-[#4C4C4C] duration-200 tracking-[1px] cursor-pointer'>SEE PRODUCT</Link>
                 </div>
 
             </div>
 
            <div className='bg-[url("/src/assets/images/speakerbg.png")] bg-cover bg-center rounded-[8px] p-12 lg:p-20'>
                 <h3 className='text-[28px] text-[#000000] mb-5 font-bold'>ZX7 SPEAKER</h3>
-                <button className='bg-transparent border-[1px] border-black px-7 relative py-3 z-30 text-black text-[13px] font-bold hover:bg-[#000000] hover:text-white duration-200 tracking-[1px] cursor-pointer'>SEE PRODUCT</button>
+                <Link to="/product/7" className='bg-transparent border-[1px] border-black px-7 relative py-3 z-30 text-black text-[13px] font-bold hover:bg-[#000000] hover:text-white duration-200 tracking-[1px] cursor-pointer'>SEE PRODUCT</Link>
             </div>
 
             <div className='grid grid-cols-1 md:grid-cols-2 gap-10'>
@@ -94,7 +95,7 @@ function Home() {
 
                 <div className='bg-[#F1F1F1] rounded-[8px] p-12 md:p-20'>
                 <h3 className='text-[28px] text-[#000000] mb-5 font-bold'>YX1 EARPHONES</h3>
-                <button className='bg-transparent border-[1px] border-black px-7 relative py-3 z-30 text-black text-[13px] font-bold hover:bg-[#000000] hover:text-white duration-200 tracking-[1px] cursor-pointer'>SEE PRODUCT</button>
+                <Link to="/product/1" className='bg-transparent border-[1px] border-black px-7 relative py-3 z-30 text-black text-[13px] font-bold hover:bg-[#000000] hover:text-white duration-200 tracking-[1px] cursor-pointer'>SEE PRODUCT</Link>
                 </div>
 
             </div>

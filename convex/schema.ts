@@ -15,13 +15,15 @@ export default defineSchema({
       country: v.string(),
     }),
     items: v.array(
-      v.object({
-        id: v.string(),
-        name: v.string(),
-        price: v.number(),
-        quantity: v.number(),
-      })
-    ),
+  v.object({
+    id: v.string(),
+    name: v.string(),
+    modelname: v.optional(v.string()),
+    image: v.optional(v.string()),
+    price: v.float64(),
+    quantity: v.float64(),
+  })
+),
     totals: v.object({
       subtotal: v.number(),
       shipping: v.number(),

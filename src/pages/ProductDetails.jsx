@@ -13,6 +13,7 @@ import earphone from '../assets/images/image-removebg-preview(42).png'
 import earphoner from '../assets/images/Bitmap(3).png'
 import headphoneone from '../assets/images/image-removebg-preview(47)(1).png'  
 import headphonewhite from '../assets/images/image-removebg-preview(48)(1).png'  
+import ScrollToTop from '../components/scrolltotop';
 
 function ProductDetails() {
   const { id } = useParams();
@@ -43,6 +44,8 @@ function ProductDetails() {
   };
 
   return (
+    <>
+    <ScrollToTop />
     <main className="w-full">
       <section className="pt-32 md:pt-32 p-9 md:p-9 lg:p-32 pb-0 md:pb-0 lg:pb-0">
         <button onClick={() => navigate(-1)} className="flex items-center gap-2 mb-5 cursor-pointer text-[#666666] hover:text-[#D87D4A]">
@@ -186,6 +189,7 @@ function ProductDetails() {
         </div>
       )}
     </main>
+    </>
   );
 }
 

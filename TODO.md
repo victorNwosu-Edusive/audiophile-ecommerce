@@ -1,6 +1,8 @@
-# Add You May Also Like Section to ProductDetails TODO
+# Fix Checkout Validation and Add Modal TODO
 
-- [x] Import products from data/products.js in ProductDetails.jsx
-- [x] Add function to select 3 random products (excluding current product)
-- [x] Replace placeholder with YOU MAY ALSO LIKE section grid
-- [x] Test section displays correctly on product details page (dev server running)
+- [x] Re-add emailjs import to Checkout.jsx
+- [x] Modify checkout to always show form, add cart check in onSubmit
+- [x] Add modal state and show thank you modal on successful submission
+- [x] Re-add email sending code in onSubmit
+- [x] Add modal component with order details and close button
+- [x] Test validation with empty cart, form validation, modal display, email sending (dev server running)
