@@ -257,10 +257,10 @@ function Checkout() {
               <div> </div>
               <div className="flex flex-col gap-4">
               <label className="flex items-center p-3 rounded-[8px] border-gray-300 border cursor-pointer hover:border-[#D87D4A] focus:border-[#D87D4A]">
-                <input type="radio" value="e-money" {...register('paymentMethod')} className="mr-2" /> e-Money
+                <input type="radio" value="e-money" {...register('paymentMethod')} className="mr-2 accent-[#D87D4A]" /> e-Money
               </label>
               <label className="flex items-center p-3 rounded-[8px] border-gray-300 border cursor-pointer hover:border-[#D87D4A] focus:border-[#D87D4A]">
-                <input type="radio" value="cash" {...register('paymentMethod')} className="mr-2" /> Cash on
+                <input type="radio" value="cash" {...register('paymentMethod')} className="mr-2 accent-[#D87D4A]" /> Cash on
                 Delivery
               </label>
               </div>
