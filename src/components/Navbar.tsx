@@ -1,17 +1,29 @@
 import logo from '../assets/images/audiophile.png'
 import '../App.css'
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useState } from 'react';
 import { Outlet, NavLink, Link, useLocation, useNavigate } from 'react-router-dom'
 import { ShoppingCart, Minus, Plus, X } from 'lucide-react'
-import { useCart } from '../context/CartContext'
-import Footer from './Footer'
+import { useCart } from '../context/CartContext.tsx'
+import Footer from './Footer.tsx'
 import headphone from '../assets/images/image-removebg-preview(41)(1).png'
 import speaker from '../assets/images/image-removebg-preview(38)(1).png'
 import earphone from '../assets/images/image-removebg-preview(42).png'
 import { ChevronRight } from 'lucide-react'
 
+interface CartItemProps {
+  item: {
+    id: string;
+    name: string;
+    modelname?: string;
+    price: number;
+    image: string;
+    quantity: number;
+  };
+  updateQuantity: (id: string, quantity: number) => void;
+}
+
 // Cart Item Component
-const CartItem = ({ item, updateQuantity }) => {
+const CartItem: React.FC<CartItemProps> = ({ item, updateQuantity }) => {
   return (
     <div className="flex items-center justify-between py-2">
       <div className="flex items-center space-x-4">
@@ -21,11 +33,15 @@ const CartItem = ({ item, updateQuantity }) => {
             src={item.image}
             alt={item.name}
             className="w-full h-full object-cover"
-            onError={(e) => { e.target.onerror = null; e.target.src = "https://placehold.co/64x64/E5E7EB/4B5563?text=🎧"; }}
+            onError={(e: React.SyntheticEvent<HTMLImageElement, Event>) => {
+              const target = e.target as HTMLImageElement;
+              target.onerror = null;
+              target.src = "https://placehold.co/64x64/E5E7EB/4B5563?text=🎧";
+            }}
           />
         </div>
         <div>
-          <h4 className="text-[15px] font-bold text-black">{item.modelname}</h4>
+          <h4 className="text-[15px] font-bold text-black">{item.modelname || item.name}</h4>
           <p className="text-[13px] text-gray-500 font-bold">${item.price.toLocaleString()}</p>
         </div>
       </div>
@@ -53,7 +69,7 @@ const CartItem = ({ item, updateQuantity }) => {
 };
 
 // Cart Modal Component
-const CartModal = ({ isVisible, toggleCart }) => {
+const CartModal: React.FC<{ isVisible: boolean; toggleCart: () => void }> = ({ isVisible, toggleCart }) => {
   const { cart, updateQuantity, clearCart, getTotal } = useCart();
 
   const navigate = useNavigate();
@@ -140,7 +156,7 @@ const CartModal = ({ isVisible, toggleCart }) => {
   );
 };
 
-function Navbar() {
+const Navbar: React.FC = () => {
     const { getItemCount } = useCart();
     const location = useLocation();
     const [isOpen, setIsOpen] = useState(false);

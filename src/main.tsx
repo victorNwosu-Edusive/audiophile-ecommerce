@@ -1,20 +1,20 @@
-import * as React from "react";
-import * as ReactDOM from "react-dom/client";
+import React from "react";
+import ReactDOM from "react-dom/client";
 import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
 import { ConvexProvider, ConvexReactClient } from "convex/react";
 import "./index.css";
-import Home from "./pages/Home";
-import Headphones from "./pages/Headphones";
-import Navbar from "./components/Navbar";
-import Speakers from "./pages/Speakers";
-import Earphones from "./pages/Earphones";
-import ProductDetails from "./pages/ProductDetails";
-import Checkout from "./pages/Checkout";
-import OrderConfirmation from "./pages/OrderConfirmation";
-import { CartProvider } from "./context/CartContext";
+import Home from "./pages/Home.tsx";
+import Headphones from "./pages/Headphones.tsx";
+import Navbar from "./components/Navbar.tsx";
+import Speakers from "./pages/Speakers.tsx";
+import Earphones from "./pages/Earphones.tsx";
+import ProductDetails from "./pages/ProductDetails.tsx";
+import Checkout from "./pages/Checkout.tsx";
+import OrderConfirmation from "./pages/OrderConfirmation.tsx";
+import { CartProvider } from "./context/CartContext.tsx";
 
 const convex = new ConvexReactClient(import.meta.env.VITE_CONVEX_URL);
 
