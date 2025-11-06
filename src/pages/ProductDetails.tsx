@@ -59,7 +59,7 @@ function ProductDetails() {
             <img src={product.image} alt={product.name} className="max-w-full h-auto" />
           </div>
           <div className="flex flex-col justify-center">
-            {product.new && <p className="text-[#D87D4A] tracking-[10px] text-[14px] mb-5">NEW PRODUCT</p>}
+            <p className="text-[#D87D4A] tracking-[10px] text-[14px] mb-5">NEW PRODUCT</p>
             <h1 className="text-[36px] md:text-[50px] font-bold text-black leading-14 mb-5">{product.name}</h1>
             <p className="text-[15px] text-[#666666] mb-10 font-[500]">{product.description}</p>
             <p className="text-[18px] font-bold text-black mb-5">${product.price.toLocaleString()}</p>
@@ -67,14 +67,14 @@ function ProductDetails() {
               <div className="flex items-center bg-[#F1F1F1] px-4 py-2">
                 <button
                   onClick={() => setQuantity(Math.max(1, quantity - 1))}
-                  className="text-[#D87D4A] font-bold text-xl px-2"
+                  className="text-gray-500 hover:text-[#D87D4A] duration-200 cursor-pointer font-bold text-xl px-2"
                 >
                   -
                 </button>
                 <span className="px-4">{quantity}</span>
                 <button
                   onClick={() => setQuantity(quantity + 1)}
-                  className="text-[#D87D4A] font-bold text-xl px-2"
+                  className="text-gray-500 hover:text-[#D87D4A] duration-200 cursor-pointer font-bold text-xl px-2"
                 >
                   +
                 </button>

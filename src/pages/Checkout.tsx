@@ -212,7 +212,7 @@ function Checkout() {
               {errors.address && <p className="text-red-500 text-xs mt-1">{errors.address.message}</p>}
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div>
                 <label className="block text-[12px] font-bold mb-2">ZIP Code</label>
                 <input
@@ -312,31 +312,31 @@ function Checkout() {
             {cart.map((item) => (
               <div key={item.id} className="flex justify-between items-center mb-4">
                 <div className="flex items-center gap-4">
-                  <img src={item.image} alt={item.name} className="w-16 h-16 rounded" />
+                  <img src={item.image} alt={item.name} className="w-16 h-16 p-3 rounded bg-[#F1F1F1]" />
                   <div>
-                    <p className="font-bold">{item.modelname}</p>
+                    <p className="font-bold text-[15px]">{item.modelname}</p>
                     <p className="text-[#666666] font-bold">${item.price}</p>
                   </div>
                 </div>
-                <p className="font-bold">x{item.quantity}</p>
+                <p className="font-bold text-[15px] text-[#666666]">x{item.quantity}</p>
               </div>
             ))}
 
-            <div className="border-t pt-4">
+            <div className="pt-4">
               <div className="flex justify-between mb-2">
-                <span>TOTAL</span>
+                <span className='text-[#666666] text-[15px]'>TOTAL</span>
                 <span className="font-bold">${getTotal().toLocaleString()}</span>
               </div>
               <div className="flex justify-between mb-2">
-                <span>SHIPPING</span>
+                <span className='text-[#666666] text-[15px]'>SHIPPING</span>
                 <span className="font-bold">$50</span>
               </div>
               <div className="flex justify-between mb-4">
-                <span>VAT (INCLUDED)</span>
+                <span className='text-[#666666] text-[15px]'>VAT (INCLUDED)</span>
                 <span className="font-bold">${Math.round(getTotal() * 0.2)}</span>
               </div>
               <div className="flex justify-between text-[18px] font-bold">
-                <span>GRAND TOTAL</span>
+                <span className='text-[#666666] text-[15px]'>GRAND TOTAL</span>
                 <span className="text-[#D87D4A]">
                   ${(getTotal() + Math.round(getTotal() * 0.2) + 50).toLocaleString()}
                 </span>
@@ -347,7 +347,7 @@ function Checkout() {
           <button
             type="submit"
             disabled={isSubmitting}
-            className="w-full bg-[#D87D4A] text-white py-3 mt-5 font-bold hover:bg-[#FBAF85] duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
+            className="w-full bg-[#D87D4A] cursor-pointer text-white py-3 mt-5 font-bold hover:bg-[#FBAF85] duration-200 disabled:opacity-50 "
           >
             {isSubmitting ? 'PROCESSING...' : 'CONTINUE & PAY'}
           </button>

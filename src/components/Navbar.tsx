@@ -49,7 +49,7 @@ const CartItem: React.FC<CartItemProps> = ({ item, updateQuantity }) => {
       {/* Quantity Controls (Matching the image style) */}
       <div className="flex items-center h-8 bg-[#F1F1F1] text-xs font-semibold">
         <button
-          className="w-6 h-full text-gray-500 hover:text-orange-500 transition-colors flex items-center justify-center"
+          className="w-6 h-full text-gray-500 hover:text-[#D87D4A] cursor-pointer  transition-colors flex items-center justify-center"
           onClick={() => updateQuantity(item.id, item.quantity - 1)}
           aria-label={`Decrease quantity of ${item.name}`}
         >
@@ -57,7 +57,7 @@ const CartItem: React.FC<CartItemProps> = ({ item, updateQuantity }) => {
         </button>
         <span className="px-2 text-gray-700 w-6 text-center">{item.quantity}</span>
         <button
-          className="w-6 h-full text-gray-500 hover:text-orange-500 transition-colors flex items-center justify-center"
+          className="w-6 h-full text-gray-500 hover:text-[#D87D4A] cursor-pointer transition-colors flex items-center justify-center"
           onClick={() => updateQuantity(item.id, item.quantity + 1)}
           aria-label={`Increase quantity of ${item.name}`}
         >
@@ -114,7 +114,7 @@ const CartModal: React.FC<{ isVisible: boolean; toggleCart: () => void }> = ({ i
           </h3>
           <button
             onClick={clearCart}
-            className="text-xs text-gray-500 underline transition-colors cursor-pointer"
+            className="text-xs text-gray-500 underline hover:text-[#D87D4A] transition-colors cursor-pointer"
           >
             Remove all
           </button>
