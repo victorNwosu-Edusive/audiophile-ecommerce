@@ -167,7 +167,7 @@ function Checkout() {
               <input
                 type="text"
                 {...register('name')}
-                className={`w-full p-3 border rounded ${
+                className={`w-full p-3 border rounded focus:border-[#D87D4A] outline-none duration-200 caret-[#D87D4A] ${
                   errors.name ? 'border-red-500' : 'border-gray-300'
                 }`}
               />
@@ -178,7 +178,7 @@ function Checkout() {
               <input
                 type="email"
                 {...register('email')}
-                className={`w-full p-3 border rounded ${
+                className={`w-full p-3 border rounded focus:border-[#D87D4A] outline-none duration-200 caret-[#D87D4A] ${
                   errors.email ? 'border-red-500' : 'border-gray-300'
                 }`}
               />
@@ -189,7 +189,7 @@ function Checkout() {
               <input
                 type="tel"
                 {...register('phone')}
-                className={`w-full p-3 border rounded ${
+                className={`w-full p-3 border rounded focus:border-[#D87D4A] outline-none duration-200 caret-[#D87D4A] ${
                   errors.phone ? 'border-red-500' : 'border-gray-300'
                 }`}
               />
@@ -205,7 +205,7 @@ function Checkout() {
               <input
                 type="text"
                 {...register('address')}
-                className={`w-full p-3 border rounded ${
+                className={`w-full p-3 border rounded focus:border-[#D87D4A] outline-none duration-200 caret-[#D87D4A] ${
                   errors.address ? 'border-red-500' : 'border-gray-300'
                 }`}
               />
@@ -218,7 +218,7 @@ function Checkout() {
                 <input
                   type="text"
                   {...register('zip')}
-                  className={`w-full p-3 border rounded ${
+                  className={`w-full p-3 border rounded focus:border-[#D87D4A] outline-none duration-200 caret-[#D87D4A] ${
                     errors.zip ? 'border-red-500' : 'border-gray-300'
                   }`}
                 />
@@ -229,7 +229,7 @@ function Checkout() {
                 <input
                   type="text"
                   {...register('city')}
-                  className={`w-full p-3 border rounded ${
+                  className={`w-full p-3 border rounded focus:border-[#D87D4A] outline-none duration-200 caret-[#D87D4A] ${
                     errors.city ? 'border-red-500' : 'border-gray-300'
                   }`}
                 />
@@ -240,7 +240,7 @@ function Checkout() {
                 <input
                   type="text"
                   {...register('country')}
-                  className={`w-full p-3 border rounded ${
+                  className={`w-full p-3 border rounded focus:border-[#D87D4A] outline-none duration-200 caret-[#D87D4A] ${
                     errors.country ? 'border-red-500' : 'border-gray-300'
                   }`}
                 />
@@ -274,7 +274,7 @@ function Checkout() {
                 <input
                   type="text"
                   {...register('eMoneyNumber')}
-                  className={`w-full p-3 border rounded ${
+                  className={`w-full p-3 border rounded focus:border-[#D87D4A] outline-none duration-200 caret-[#D87D4A] ${
                     errors.eMoneyNumber ? 'border-red-500' : 'border-gray-300'
                   }`}
                 />
@@ -287,7 +287,7 @@ function Checkout() {
                 <input
                   type="text"
                   {...register('eMoneyPin')}
-                  className={`w-full p-3 border rounded ${
+                  className={`w-full p-3 border rounded focus:border-[#D87D4A] outline-none duration-200 caret-[#D87D4A] ${
                     errors.eMoneyPin ? 'border-red-500' : 'border-gray-300'
                   }`}
                 />
