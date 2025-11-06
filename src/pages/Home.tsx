@@ -55,7 +55,7 @@ function Home() {
             <a href='/speakers' className='cursor-pointer hover:text-[#D87D4A] hover:gap-2 duration-200 text-[13px] font-[700] tracking-[1px] text-neutral-500 flex items-center gap-1'>SHOP <ChevronRight size={15} className='text-[#D87D4A]' /> </a>
             </NavLink>
 
-            <NavLink className='cursor-pointer relative flex flex-col items-center'>
+            <NavLink to="/earphones" className='cursor-pointer relative flex flex-col items-center'>
             <img className=' h-[146px] z-30 w-auto -m-20' src={earphone} alt="" />
             <span className='h-4 w-28 bg-neutral-500 rounded-full blur-md mt-[77px] mb-5'></span>
              <h1 className='font-bold text-[18px] tracking-[1.29px] mb-3'>EARPHONES</h1>
