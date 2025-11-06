@@ -230,7 +230,7 @@ const Navbar: React.FC = () => {
 
         <div id="mobile" className={`${
           isOpen ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-4 pointer-events-none"
-        } md:hidden absolute duration-300 ease-out w-full z-40 p-5 pt-48 bg-white rounded-[8px] transition-all`}>
+        } lg:hidden absolute duration-300 ease-out w-full z-40 p-5 pt-48 bg-white rounded-[8px] transition-all`}>
             <div className='*:bg-[#F1F1F1] *:p-5 *:rounded-[8px] gap-20 md:gap-5 lg:gap-7 grid-cols-1 md:grid-cols-3   grid lg:grid-cols-3 '>
             <NavLink to="/headphones" onClick={closeMenu} className='cursor-pointer relative flex flex-col items-center'>
             <img className=' h-[146px] z-30 w-auto -m-20' src={headphone} alt="" />
