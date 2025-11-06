@@ -19,7 +19,7 @@ function Headphones() {
     <>
     <ScrollToTop />
       <main className=' w-full'>
-      <section className='bg-[#000000] pt-48 lg:pt-48 lg:px-32 p-16 md:p-16 flex items-center justify-center'>
+      <section className='bg-[#000000] pt-48 md:pt-48 lg:pt-48 lg:px-32 p-16 md:p-16 flex items-center justify-center'>
             <h2 className='text-[28px] lg:text-[40px] font-bold text-white tracking-[1.43px] mb-5'>HEADPHONES</h2>
             
       </section>
