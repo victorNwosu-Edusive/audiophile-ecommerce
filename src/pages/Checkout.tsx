@@ -381,9 +381,9 @@ function Checkout() {
         {/* Left side - item summary */}
         <div className="bg-[#F1F1F1] flex-1 p-5">
           {orderData?.items?.slice(0, 1).map((item) => (
-            <div key={item.id} className="flex justify-between items-center mb-4">
+            <div key={item.id} className="flex justify-between  mb-4">
               <div className="flex items-center gap-4">
-                <img src={item.image} alt={item.name} className="w-16 h-16 rounded" />
+                <img src={item.image} alt={item.name} className="w-10 h-10 rounded" />
                 <div>
                   <p className="font-bold text-[14px]">{item.modelname}</p>
                   <p className="text-[#777] text-sm font-semibold">${item.price}</p>
