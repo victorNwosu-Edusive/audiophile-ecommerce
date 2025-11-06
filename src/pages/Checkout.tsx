@@ -157,7 +157,7 @@ function Checkout() {
       <form onSubmit={handleSubmit(onSubmit)} className="grid grid-cols-1 lg:grid-cols-3 gap-10">
         {/* LEFT SIDE */}
         <div className="bg-white rounded-[8px] lg:col-span-2 p-8">
-          <h1 className="text-[24px] font-bold mb-5">Checkout</h1>
+          <h1 className="text-[24px] font-bold mb-5">CHECKOUT</h1>
 
           {/* Billing Details */}
           <h2 className="text-[18px] font-bold mb-5 text-[#D87D4A]">BILLING DETAILS</h2>
