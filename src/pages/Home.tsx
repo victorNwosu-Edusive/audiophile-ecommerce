@@ -20,7 +20,7 @@ function Home() {
             <p className='text-[#F1F1F1] tracking-[10px] text-[14px] mb-5'>NEW PRODUCTS</p>
             <h1 className='text-[36px] md:text-[50px] lg:text-[50px] font-bold text-white leading-14 mb-5'>XX99 MARK II <br /> HEADPHONES</h1>
             <p className='text-[15px] text-[#F1F1F1] text-center md:text-center lg:text-left mb-10 font-[500]'>Experience natural, lifelike audio and exceptional<br className='md:block lg:hidden' /> build quality made for the passionate music <br className='md:block lg:hidden' /> enthusiast.</p>
-            <Link to="/product/2" className='bg-[#D87D4A] px-7 py-3 text-white text-[13px] font-bold hover:bg-[#FBAF85] duration-200 tracking-[1px] cursor-pointer'>SEE PRODUCT</Link>
+            <NavLink to="/product/2" className='bg-[#D87D4A] px-7 py-3 text-white text-[13px] font-bold hover:bg-[#FBAF85] duration-200 tracking-[1px] cursor-pointer'>SEE PRODUCT</NavLink>
         </div>
         <div className='hidden md:hidden lg:block col-span-2 relative overflow-hidden' >
             <img src={hero} className='flex ' alt="" />
@@ -32,7 +32,7 @@ function Home() {
             <p className='text-[#F1F1F1] tracking-[10px] text-[14px] mb-5'>NEW PRODUCTS</p>
             <h1 className='text-[36px] md:text-[50px] lg:text-[50px] font-bold text-white leading-10 md:leading-14 mb-5'>XX99 MARK II <br /> HEADPHONES</h1>
             <p className='text-[15px] text-[#F1F1F1] text-center md:text-center lg:text-left mb-10 font-[500]'>Experience natural, lifelike audio and exceptional build quality made for the passionate music enthusiast.</p>
-            <button className='bg-[#D87D4A] px-7 py-3 text-white text-[13px] font-bold hover:bg-[#FBAF85] duration-200 tracking-[1px] cursor-pointer'>SEE PRODUCT</button>
+            <NavLink to="/product/2" className='bg-[#D87D4A] px-7 py-3 text-white text-[13px] font-bold hover:bg-[#FBAF85] duration-200 tracking-[1px] cursor-pointer'>SEE PRODUCT</NavLink>
         </div>
         <div className='hidden md:hidden lg:block col-span-3 relative overflow-hidden' >
             <img src={hero} className='flex ' alt="" />
