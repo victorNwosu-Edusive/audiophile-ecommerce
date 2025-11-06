@@ -4,6 +4,25 @@ import headphoneImageb from '../assets/images/image-removebg-preview(48)(1).png'
 import headphoneImage from '../assets/images/image-removebg-preview(47)(1).png';
 import speakerImage from '../assets/images/image-removebg-preview(38)(1).png';
 import speakerImageb from '../assets/images/image-removebg-preview(49)(1).png';
+import earphoneb from '../assets/images/yx1 (3).png';
+import earphonec from '../assets/images/yx1 (1).png';
+import earphoned from '../assets/images/yx1 (2).png';
+import headphonea from '../assets/images/headphone (3).png';
+import headphoneb from '../assets/images/headphone (1).png';
+import headphonec from '../assets/images/headphone (2).png';
+import speakera from '../assets/images/zx9 (3).png';
+import speakerb from '../assets/images/zx9 (1).png';
+import speakerc from '../assets/images/zx9 (2).png';
+import bigheadphonea from '../assets/images/marki (2).png';
+import bigheadphoneb from '../assets/images/marki (3).png';
+import bigheadphonec from '../assets/images/marki (1).png';
+import whiteheadphonea from '../assets/images/xx (2).png';
+import whiteheadphoneb from '../assets/images/xx (3).png';
+import whiteheadphonec from '../assets/images/xx (1).png';
+import blackspeakera from '../assets/images/zx7 (2).png';
+import blackspeakerb from '../assets/images/zx7 (3).png';
+import blackspeakerc from '../assets/images/zx7 (1).png';
+
 
 export const products = [
   {
@@ -25,9 +44,9 @@ export const products = [
       { item: 'Warranty Card', quantity: 1 }
     ],
     gallery: [
-      '/assets/images/headphone(3).png',
-      '../assets/images/headphone(1).png',
-      '../assets/images/headphone(2).png'
+      earphoneb,
+      earphonec,
+      earphoned
     ],
     image: earphoneImage
   },
@@ -50,9 +69,9 @@ export const products = [
       { item: 'Travel Bag', quantity: 1 }
     ],
     gallery: [
-      'path/to/image1.jpg',
-      'path/to/image2.jpg',
-      'path/to/image3.jpg'
+      headphonea,
+      headphoneb,
+      headphonec
     ],
     image: headphoneImage
   },
@@ -75,41 +94,15 @@ export const products = [
       { item: '10m Optical Cable', quantity: 1 }
     ],
     gallery: [
-      'path/to/image1.jpg',
-      'path/to/image2.jpg',
-      'path/to/image3.jpg'
+      speakera,
+      speakerb,
+      speakerc
     ],
     image: speakerImage
   },
-
-  {
-    id: 4,
-    name: 'XX99 MARK II HEADPHONES',
-    modelname: 'XX99 MK II',
-    category: 'headphones',
-    price: 2999,
-    description: 'The new XX99 Mark II headphones is the pinnacle of pristine audio. It redefines your premium headphone experience by reproducing the balanced depth and precision of studio-quality sound.',
-    features: [
-      'Featuring a genuine leather head strap and premium earcups, these headphones deliver superior comfort for those who like to enjoy endless listening. It includes intuitive controls designed for any situation. Whether you’re taking a business call or just in your own personal space, the auto on/off and pause features ensure that you’ll never miss a beat.',
-      'The advanced Active Noise Cancellation with built-in equalizer allow you to experience your audio world on your terms. It lets you enjoy your audio in peace, but quickly interact with your surroundings when you need to. Combined with Bluetooth 5. 0 compliant connectivity and 17 hour battery life, the XX99 Mark II headphones gives you superior sound, cutting-edge technology, and a modern design aesthetic.'
-    ],
-    includes: [
-      { item: 'Headphone Unit', quantity: 1 },
-      { item: 'Replacement Earcups', quantity: 2 },
-      { item: 'User Manual', quantity: 1 },
-      { item: '3.5mm 5m Audio Cable', quantity: 1 },
-      { item: 'Travel Bag', quantity: 1 }
-    ],
-    gallery: [
-      'path/to/image1.jpg',
-      'path/to/image2.jpg',
-      'path/to/image3.jpg'
-    ],
-    image: headphoneImage
-  },
   {
     id: 5,
-    name: 'XX99 Mark I HEAPHONES',
+    name: 'XX99 MARK I HEAPHONES',
     modelname: 'XX99 MK I',
     category: 'headphones',
     price: 1750,
@@ -125,9 +118,9 @@ export const products = [
       { item: '3.5mm 5m Audio Cable', quantity: 1 }
     ],
     gallery: [
-      'path/to/image1.jpg',
-      'path/to/image2.jpg',
-      'path/to/image3.jpg'
+      bigheadphonea,
+      bigheadphoneb,
+      bigheadphonec
     ],
     image: headphoneImagea
   },
@@ -149,9 +142,9 @@ export const products = [
       { item: '3.5mm 5m Audio Cable', quantity: 1 }
     ],
     gallery: [
-      'path/to/image1.jpg',
-      'path/to/image2.jpg',
-      'path/to/image3.jpg'
+      whiteheadphonea,
+      whiteheadphoneb,
+      whiteheadphonec
     ],
     image: headphoneImageb
   },
@@ -174,9 +167,9 @@ export const products = [
       { item: '7.5m Optical Cable', quantity: 1 }
     ],
     gallery: [
-      'path/to/image1.jpg',
-      'path/to/image2.jpg',
-      'path/to/image3.jpg'
+      blackspeakera,
+      blackspeakerb,
+      blackspeakerc
     ],
     image: speakerImageb
   },

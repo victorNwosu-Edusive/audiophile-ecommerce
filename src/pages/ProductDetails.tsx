@@ -113,12 +113,18 @@ function ProductDetails() {
 
       {/* Gallery section */}
       <section className="p-12 md:p-32">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-          {product.gallery.map((img, index) => (
-            <img key={index} src={img} alt="" className="rounded-[8px]" />
-          ))}
-        </div>
-      </section>
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+    <div className="grid grid-rows-2 gap-5">
+      <img src={product.gallery[0]} alt="" className="rounded-[8px]" />
+      <img src={product.gallery[1]} alt="" className="rounded-[8px]" />
+    </div>
+    <img
+      src={product.gallery[2]}
+      alt=""
+      className="rounded-[8px] md:h-full object-cover"
+    />
+  </div>
+</section>
 
       {/* You may also like section */}
       <section className="p-12 md:p-32">
