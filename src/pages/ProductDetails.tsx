@@ -97,7 +97,7 @@ function ProductDetails() {
             <p className="text-[#666666] mb-5">{product.features[0]}</p>
             <p className="text-[#666666]">{product.features[1]}</p>
           </div>
-          <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1'>
+          <div>
             <h2 className="text-[24px] font-bold mb-5">IN THE BOX</h2>
             <ul>
               {product.includes.map((item, index) => (
